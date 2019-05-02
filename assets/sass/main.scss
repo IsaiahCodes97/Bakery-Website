@@ -271,13 +271,31 @@ header {
 .section-2 {
   padding:15px 0 120px 0;
   background:#fff;
+  width:100%;
+
   .section-2-block-parent {
+    overflow:hidden;
     padding:3px;
     // background:blue;
     width:100%;
 
+  @include desktop {
+      margin: 0 auto;
+      width:90%;
+      text-align:center;
+      // background:red;
+      // text-align:center;
+    }
+
     .section-2-block1 {
       // background:lightcoral;
+
+      @include desktop {
+        float:left;
+        // background:green;
+        width: 50%;
+        
+      }
 
       h2 {
         margin-top:100px;
@@ -370,6 +388,14 @@ header {
     // margin-top:px;
     text-align:center;
     // background:green;
+
+    @include desktop {
+
+        float:left;
+        // background:blue;
+        width:50%;
+      }
+    
     #circle-div {
       // text-align:center;
       margin:0 auto;
@@ -380,6 +406,15 @@ header {
       background:rgba(255,255,255,0.92);	
       position:relative;
       top:220px;
+      @include desktop {
+        position:relative;
+        top:267px;
+      }
+      @media (min-width: 1250px) {
+        top:330px;
+        // height:300px;
+        // width:300px;
+      }
 
       #text-circle-div {
         font-family:$secondaryFont;
@@ -387,12 +422,23 @@ header {
         color: $section2Font2ndColor;
         position:relative;
         top:55px;
+        @include desktop {
+
+        }
       }
     }
     img {
       margin:0 auto;
       width:300px;
       height:300px;
+      @include desktop {
+        width:400px;
+        height:400px;
+      }
+      @media (min-width: 1250px) {
+        width:550px;
+        height:550px;
+      }
     }
 
   }
