@@ -1,5 +1,6 @@
 @import url( 'https://fonts.googleapis.com/css?family=Bree+Serif|Halant|Lora|PT+Mono');
 @import url('https://fonts.googleapis.com/css?family=Pinyon+Script');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import "reset";
 @import "variables"; // make sure to keep this above so everything loads correctly
@@ -12,10 +13,18 @@
 // font-family: 'Lora', serif;
 // font-family: 'Halant', serif;
 // font-family: 'Pinyon Script', cursive;
+// font-family: 'Dancing Script', cursive;
 
 $color: purple;  
 $mainFont: 'Lora', serif;
 $secondaryFont: 'Halant', serif;
+
+$section2MainFont:'Bree Serif', serif;
+
+
+$section2FontColor: #56534c;
+$section2Font2ndColor: #F2C063;
+
 
 $tablet: 719px;
 $desktop: 960px;
@@ -260,6 +269,131 @@ header {
 }
 
 .section-2 {
-  padding:15px;
-  background:lightgreen;
+  padding:15px 0 120px 0;
+  background:#fff;
+  .section-2-block-parent {
+    padding:3px;
+    // background:blue;
+    width:100%;
+
+    .section-2-block1 {
+      // background:lightcoral;
+
+      h2 {
+        margin-top:100px;
+        text-align:center;
+        font-family: $section2MainFont;
+        color: $section2FontColor;
+        font-size:2.4em;
+      }
+      figure {
+        margin-top: 13px;
+        font-family:$section2MainFont;
+        color: $section2Font2ndColor;
+        font-size:1.2em;
+        font-weight:600;
+        text-align:center;
+      }
+      p {
+        margin: 0 auto;
+        margin-top:68px;
+        text-align:center;
+        color: $section2FontColor;
+        width:360px;
+      }
+      h3 {
+        font-family: $section2MainFont;
+        font-size:1.3em;
+        color: $section2FontColor;
+        padding-top:32px;
+        // padding-bottom:32px;
+        text-align:center;
+      }
+      .section-2-sub-wrap {
+        text-align:center;
+        ul {
+          // background:red;
+          display:inline-block;
+          #img-font-wrap-1 {
+            position:relative;
+            right:30px;
+          }
+          #img-font-wrap-2 {
+            position:relative;
+            left:30px;
+          }
+          li {
+            display:inline-block;
+            
+            img {
+              position:relative;
+              top:40px;
+              border-radius:50%;
+              // background:blue;
+              padding:3px;
+            }
+          }
+        }
+      }
+      .section-2-sub-wrap2 {
+        // display:inline-block;
+        margin-top:105px;
+        // margin-bottom:30px;
+        text-align:center;
+        ul {
+          margin:0 auto;
+          // background:red;
+          li {
+            font-family: 'Dancing Script', cursive;
+            color:$section2Font2ndColor;
+            font-size:1.4em;
+            display:inline-block;
+            text-align:center;
+          }
+          #quote-1 {
+            font-size:4em;
+            position: relative;
+            right:26px;
+            bottom:24px;
+          }
+          #quote-2 {
+            font-size:4em;
+            position: relative;
+            left:26px;
+            top:64px;
+          }
+        }
+      }
+    }
+  }
+  .section-2-block2 {
+    // margin-top:px;
+    text-align:center;
+    // background:green;
+    #circle-div {
+      // text-align:center;
+      margin:0 auto;
+      border-radius:50%;
+      width:130px;
+      height:130px;
+      padding:3px;
+      background:rgba(255,255,255,0.92);	
+      position:relative;
+      top:220px;
+
+      #text-circle-div {
+        font-family:$secondaryFont;
+        text-transform:uppercase;
+        color: $section2Font2ndColor;
+        position:relative;
+        top:55px;
+      }
+    }
+    img {
+      margin:0 auto;
+      width:300px;
+      height:300px;
+    }
+
+  }
 }
