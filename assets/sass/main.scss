@@ -251,7 +251,15 @@ header {
         height:65px;
         width:160px;
       }
-
     }
+    .submit-button:hover {
+        color:#F2C063;
+        transition:0.3s;
+      }
   }
+}
+
+.section-2 {
+  padding:15px;
+  background:lightgreen;
 }
