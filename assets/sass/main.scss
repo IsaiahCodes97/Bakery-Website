@@ -73,7 +73,7 @@ header {
   color:white;
   width:100%;
   display:none;
-  background: rgba(49, 49, 57, 0.7);
+  background: rgba(49, 49, 57, 0.64);
   position:absolute;
   @include tablet {
     display:block;
@@ -126,6 +126,17 @@ header {
       @media (min-width: 880px) {
         margin-left:25px;
       }
+      a {
+        color: white;
+        // letter-spacing:3px;
+        @include desktop {
+          letter-spacing:3px;
+        }
+      }
+      a:hover {
+          color:#F2C063;
+          transition:0.3s;
+        }
     }
   }
 
@@ -134,6 +145,7 @@ header {
     display:inline-block;
     width:17%;
     // background:red;
+    text-align:center;
 
     @include desktop {
       // float:left;
@@ -141,11 +153,17 @@ header {
     }
 
     li {
+      text-align:center;
       margin-left:-4px;
       display:inline-block;
       margin-left:16px;
       i {
         font-size:20px;
+        text-align:center;
+      }
+      i:hover {
+        color: #F2C063;
+        transition:0.3s;
       }
     }
   }
@@ -153,7 +171,7 @@ header {
 
 .section-1 {
   padding:10px;
-  background: url(https://i.gyazo.com/6d2568e81081854d3cf3f1b2ea9b49a7.jpg) no-repeat center center fixed; 
+  background: url(https://i.gyazo.com/11a7d87294c20a77a2076b2f797289e9.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -167,6 +185,7 @@ header {
     font-size:4.3em;
     width:60%;
     margin: 0 auto;
+    text-shadow: 2px 2px 3px #000000;
 
     @include tablet {
       width:100%;
@@ -195,6 +214,8 @@ header {
     font-size:1.5em;
     width:70%;
     margin:0 auto;
+    text-shadow: 2px 2px 3px #000000;
+
 
     @include tablet {
       padding-top:40px;
